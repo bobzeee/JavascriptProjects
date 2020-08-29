@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(145deg, #0d8cd6, #00ac8f);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input,
+.todo-button {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: #fff;
+}
+.todo-input {
+  width: 70%;
+}
+.todo-input:focus {
+  border: none;
+}
+
+.todo-button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #00ac8f;
+  transition: all 0.3s ease-in;
+}
+
+.todo-button:hover {
+  color: #000;
+  background: #54e9d0;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  width: 60rem;
+}
+/* @media screen and (max-width: 768) {
+  .todo-list {
+    min-width: 90%;
+  }
+} */
+
+.todo {
+  margin: 0.5rem;
+  background: #ffffff;
+  color: #000;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-item {
+  padding-left: 1rem;
+}
+
+.delete-btn {
+  background: rgba(0, 172, 143, 0.5);
+  border: none;
+  color: red;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.fa-trash {
+  pointer-events: none;
+}
+
+.animateEnd {
+  transform: translateY(8rem) rotateZ(40deg);
+  opacity: 0;
+}
